@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  background-color: rgb(243, 243, 243);
+  /* height: 100vh; */
+}
+.map-navbar > p {
+  margin: 0;
+}
+.map-navbar p:nth-child(1) {
+  font-weight: 700;
+}
+.map-navbar {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(181, 181, 181, 1);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(181, 181, 181, 1);
+  box-shadow: 0px 1px 4px 0px rgba(181, 181, 181, 1);
+}
+.country-search-container {
+  margin: 30px 40px;
+  /* position: absolute; */
+}
+.search-ctrl {
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  background-color: white;
+  border: none;
+}
+.filter-ctrl {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  width: 20%;
+  border: none;
+  margin-left: auto;
+}
+.filter-ctrl option {
+  color: grey;
+  border: none;
+}
+.country-cards {
+  padding: 30px;
+  gap: 15px;
+}
+.country-card {
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.country-card > img {
+  width: 250px;
+  height: 180px;
+  max-width: 100%;
+}
+.country-details {
+  text-align: left;
+  padding: 20px;
+}
+.country-details h4 {
+  margin: 10px 5px;
+}
+.country-details p {
+  margin: 0;
+}
+@media only screen and (max-width: 992px) {
+  .country-search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-ctrl{
+      width: 100%;
+  }
+  .filter-ctrl{
+      width: 50%;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 562px) {
+    .filter-ctrl{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    } 
+    .map-navbar>p{
+        font-size: small;
+    }
+}
